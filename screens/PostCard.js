@@ -29,7 +29,7 @@ export default class PostCard extends Component {
                         </View>
                     </View>
                     <Image
-                        source={require("../assets/image_7.png")}
+                        source={require("../assets/image_7.jpg")}
                         style={styles.postImage}
                     />
                     <View style={styles.captionContainer}>
