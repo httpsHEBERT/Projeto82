@@ -29,7 +29,7 @@ export default class PostCard extends Component {
                         </View>
                     </View>
                     <Image
-                        source={require("../assets/post.jpeg")}
+                        source={require("../assets/image_7.png")}
                         style={styles.postImage}
                     />
                     <View style={styles.captionContainer}>
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     profileImage: {
-        width: "100%",
+        width: "50%",
         height: "100%",
         resizeMode: "contain",
         borderRadius: RFValue(100)
@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     authorNameText: {
+        marginLeft: 6,
         color: "white",
         fontSize: RFValue(20)
     },
@@ -92,7 +93,7 @@ const styles = StyleSheet.create({
         marginTop: RFValue(20)
     },
     captionContainer: {
-
+        
     },
     captionText: {
         fontSize: 13,

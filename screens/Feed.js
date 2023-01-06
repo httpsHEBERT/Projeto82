@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {View, Text, StyleSheet, SafeAreaView, Platform, StatusBar, Image} from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 import PostCard from "./PostCard";
-
 import { FlatList } from "react-native-gesture-handler";
 
 let posts = require("./temp_posts.json");
