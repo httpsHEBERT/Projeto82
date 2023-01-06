@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     profileImage: {
-        width: "100%",
+        width: "50%",
         height: "100%",
         resizeMode: "contain",
         borderRadius: RFValue(100)
@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     authorNameText: {
+        marginLeft: 6,
         color: "white",
         fontSize: RFValue(20)
     },
