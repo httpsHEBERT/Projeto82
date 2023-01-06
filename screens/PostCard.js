@@ -26,6 +26,7 @@ export default class PostCard extends Component {
                         </View>
                         <View style={styles.authorNameContainer}>
                             <Text style={styles.authorNameText}>{this.props.post.author}</Text>
+                            <Text style={styles.dateText}>{this.props.post.date}</Text>
                         </View>
                     </View>
                     <Image
@@ -42,7 +43,7 @@ export default class PostCard extends Component {
                                 size={RFValue(30)}
                                 color={"white"}
                             />
-                            <Text style={styles.likeText}>12k</Text>
+                            <Text style={styles.likeText}>{this.props.post.likes}</Text>
                         </View>
                     </View>
                 </View>
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     profileImage: {
-        width: "50%",
+        width: "100%",
         height: "100%",
         resizeMode: "contain",
         borderRadius: RFValue(100)
@@ -81,9 +82,14 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     authorNameText: {
-        marginLeft: 6,
+        marginLeft: 10,
         color: "white",
         fontSize: RFValue(20)
+    },
+    dateText: {
+        marginLeft: 10,
+        color: "#1c1c1c",
+        fontSize: RFValue(12)
     },
     postImage: {
         width: "100%",
@@ -106,6 +112,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     likeButton: {
+        marginTop: 17,
         width: RFValue(160),
         height: RFValue(40),
         alignItems: "center",
